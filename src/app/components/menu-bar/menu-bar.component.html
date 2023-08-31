@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="logo">
+    <img
+      src="assets/ps-logo.png"
+      alt="Logo"
+      width="140px"
+      height="32px">
+  </div>
+  <div class="menu">
+
+    <div class="button">
+      <input type="checkbox" class="toggle-menu" [(ngModel)]="showSide">
+      <div class="hamburger"></div>
+    </div>
+
+    <ul [ngClass]="{'show-side': showSide}">
+      <li><a href="https://wsbittencourt.github.io/" target="_blank">Homepage </a></li>
+      <li><a href="https://www.linkedin.com/in/wsbittencourt/" target="_blank">Linkedin</a></li>
+      <li><a href="https://github.com/wsbittencourt" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</div>
